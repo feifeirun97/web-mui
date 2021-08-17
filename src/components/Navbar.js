@@ -3,6 +3,12 @@ import { makeStyles,alpha } from '@material-ui/core/styles';
 import { Search, Mail, Notifications, Cancel } from '@material-ui/icons';
 import React, { useState } from 'react';
 const useStyles = makeStyles((theme)=>({
+  root:{
+    position: '-webkit-sticky',
+    position: 'sticky',
+    top: 0,
+    zIndex: 5,
+  },
   //屏幕大于sm600px显示lg，小于则显示sm
   toolbar:{
     display:'flex',
@@ -71,37 +77,35 @@ function Navbar() {
   //可以吧state传入useStyles使用
   const classes = useStyles({ open });
   return (
-    <div >
-      <AppBar position='static'>
-        <Toolbar className={classes.toolbar}>
-          <Typography variant='h6' className={classes.lg}>
-            Fei's Web
-          </Typography>
-          <Typography variant='h6' className={classes.sm}>
-            FWeb
-          </Typography>
-          
-          <div className={classes.search}>
-            <Search />
-            <InputBase placeholder='Search...' className={classes.input}/>
-            <Cancel className={classes.cancel} onClick={()=>setOpen(false)}/>
-          </div>
+    <AppBar className={classes.root}>
+      <Toolbar className={classes.toolbar}>
+        <Typography variant='h6' className={classes.lg}>
+          Fei's Web
+        </Typography>
+        <Typography variant='h6' className={classes.sm}>
+          FWeb
+        </Typography>
+        
+        <div className={classes.search}>
+          <Search />
+          <InputBase placeholder='Search...' className={classes.input}/>
+          <Cancel className={classes.cancel} onClick={()=>setOpen(false)}/>
+        </div>
 
-          <div className={classes.icons}>
-            {/* 这里是sm情况下的Search */}
-            <Search className={classes.searchButton} onClick={()=>setOpen(true)} />
-            <Badge badgeContent={4} color="secondary" className={classes.badge}>
-              <Mail />
-            </Badge>
-            <Badge badgeContent={2} color="secondary" className={classes.badge}>
-              <Notifications />
-            </Badge>
-            <Avatar src='https://avatarfiles.alphacoders.com/944/thumb-94447.jpg'/>
-          </div>
-          
-        </Toolbar>
-      </AppBar>
-    </div>
+        <div className={classes.icons}>
+          {/* 这里是sm情况下的Search */}
+          <Search className={classes.searchButton} onClick={()=>setOpen(true)} />
+          <Badge badgeContent={4} color="secondary" className={classes.badge}>
+            <Mail />
+          </Badge>
+          <Badge badgeContent={2} color="secondary" className={classes.badge}>
+            <Notifications />
+          </Badge>
+          <Avatar src='https://avatarfiles.alphacoders.com/944/thumb-94447.jpg'/>
+        </div>
+        
+      </Toolbar>
+    </AppBar>
   );
 }
 
