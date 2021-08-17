@@ -1,7 +1,7 @@
 {
   "name": "mui",
   "version": "0.1.0",
-  "homepage": "https://feifeirun97.github.io/mui",
+  "homepage": "https://feifeirun97.github.io/web-mui/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -10,6 +10,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
