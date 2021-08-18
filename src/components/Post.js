@@ -19,7 +19,7 @@ function Post() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="https://i.loli.net/2021/08/08/IkjHefpKPVABsWT.png"
+          image="https://img0.baidu.com/it/u=3736127263,3559891737&fm=26&fmt=auto&gp=0.jpg"
           title="Contemplative Reptile"
         />
         <CardContent>

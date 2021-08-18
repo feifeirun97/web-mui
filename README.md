@@ -1,5 +1,33 @@
 # MUI基础
 
+### 变量
+
+**常用：**`variant:h1-5, body1-2`和`gutterBottom`
+
+### Link
+
+[**Link: **]()链接
+
+```jsx
+<Link href="#" className={classes.link} variant="body2">
+  Sport
+</Link>
+```
+
+### Diver
+
+[**Diver: **](https://material-ui.com/components/dividers/#divider)分割线
+
+```jsx
+<Link href="#" className={classes.link} variant="body2">
+  Music
+</Link>
+<Divider flexItem style={{marginBottom:15}}/>
+<Link href="#" className={classes.link} variant="body2">
+  Movies
+</Link>
+```
+
 ### Button
 
 ```jsx
@@ -15,10 +43,6 @@
 
 <Button size='small' color='primary'>Share</Button>
 ```
-
-### 变量
-
-**常用：**`variant:h1-5, body1-2`和`gutterBottom`
 
 ### Styles + Palette
 

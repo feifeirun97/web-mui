@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme)=>({
     boxShadow: theme.shadows[5],
     [theme.breakpoints.down('sm')]:{
       width:'100vw',
-      height:'100vh'
+      height:'80vh'
     }
   },
 
