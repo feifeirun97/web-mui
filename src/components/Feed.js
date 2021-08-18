@@ -3,7 +3,7 @@ import { Container, Typography } from '@material-ui/core';
 import Post from './Post';
 const useStyles = makeStyles((theme)=>({
   container:{
-    paddingTop:theme.spacing(3),
+    paddingTop:theme.spacing(10),
   }
 }))
 

@@ -5,8 +5,10 @@ import { Home,Person,List, PhotoCamera, PlayCircleOutline, TabletMac, Bookmark, 
 const useStyles = makeStyles((theme)=>({
   container:{
     height:'100vh',
-    paddingTop:theme.spacing(3),
+    paddingTop:theme.spacing(10),
     color:'white',
+    position:'sticky',
+    top:0,
     backgroundColor:theme.palette.primary.main,
     [theme.breakpoints.up('sm')]:{
       backgroundColor:'white',

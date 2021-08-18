@@ -4,10 +4,11 @@ import React from 'react'
 
 const useStyles = makeStyles(theme=>({
   card:{
-    marginBottom:theme.spacing(5)
+    marginBottom:theme.spacing(5),
   },
   media:{
-    height:320,
+    height:250,
+    [theme.breakpoints.down('sm')]:{height:125}
   }
 }))
 

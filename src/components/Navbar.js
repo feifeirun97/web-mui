@@ -3,12 +3,6 @@ import { makeStyles,alpha } from '@material-ui/core/styles';
 import { Search, Mail, Notifications, Cancel } from '@material-ui/icons';
 import React, { useState } from 'react';
 const useStyles = makeStyles((theme)=>({
-  root:{
-    position: '-webkit-sticky',
-    position: 'sticky',
-    top: 0,
-    zIndex: 5,
-  },
   //屏幕大于sm600px显示lg，小于则显示sm
   toolbar:{
     display:'flex',
@@ -77,7 +71,7 @@ function Navbar() {
   //可以吧state传入useStyles使用
   const classes = useStyles({ open });
   return (
-    <AppBar className={classes.root}>
+    <AppBar position='fixed'>
       <Toolbar className={classes.toolbar}>
         <Typography variant='h6' className={classes.lg}>
           Fei's Web
